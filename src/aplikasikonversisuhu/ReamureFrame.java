@@ -147,7 +147,11 @@ public class ReamureFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
-        
+        char c = evt.getKeyChar();
+        if (!Character.isDigit(c)){
+        JOptionPane.showMessageDialog(null, "Harap Isi Dengan Angka!");   
+        evt.consume();
+        }
     }//GEN-LAST:event_jTextField1KeyTyped
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
